@@ -23,12 +23,15 @@ div.wrapper{
     margin:auto;
     background-color: rgb(255, 255, 255);
     width:650px;
-    height:550px;
+    height:650px;
     /* transform: translateY(-50%); */
     transform: translate(-50%, -50%);
     border:1px solid rgb(211, 211, 211);
     padding:15px 5px;
 
+}
+form{
+    padding:12px 50px;
 }
 h2.logo{
     text-align: center;
@@ -38,21 +41,21 @@ h2.logo{
     margin:24px 10px 16px 10px;
     font-size: 1.2rem;
 }
-div.form{
+div.input-control{
     display:flex;
     flex-direction: column;
-    width:60%;
 }
 
-div.form span{
+.form span{
     text-align:left;
     color: rgb(88, 88, 88);
-    margin:10px 0 0 11px;
+    /* margin:35px 44px; */
+    
 }
-div.form input{
+form input{
     font-size: 1.1rem;
     padding:8px 18px;
-    margin:10px;
+    margin:15px 10px;
 
 }
 div.wrapper a{
@@ -74,18 +77,33 @@ button.register{
     cursor:pointer;
 }
 
-button.log-in:hover{
+button.register:hover{
     opacity:0.8;
 }
 div.wrapper a:hover{
     text-decoration: underline;
 }
 label.age select{
-margin:5px 0;
-font-size: 1.2rem;
-/* padding:8px 16px; */
-padding:8px 0;
-width:95%;
+    margin:5px 0;
+    font-size: 1.2rem;
+    padding:8px 0;
+    width:95%;
+}
 
+.input-control input:focus{
+    outline:0;
+}
+.input-control.success input{
+    border:2px solid #06c673;
+    
+}
 
+.input-control.error input{
+    border-color: #ff3860;
+} 
+
+.input-control .error{
+    color:#ff3860;
+    font-size: 9px;
+    height:13px;
 }

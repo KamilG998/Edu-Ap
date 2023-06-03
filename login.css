@@ -38,12 +38,12 @@ h2.logo{
     margin:24px 10px 16px 10px;
     font-size: 1.2rem;
 }
-div.form{
+form{
     display:flex;
     flex-direction: column;
     width:60%;
 }
-div.form input{
+form input{
     font-size: 1.1rem;
     padding:8px 18px;
     margin:10px;
@@ -74,3 +74,4 @@ button.log-in:hover{
 div.wrapper a:hover{
     text-decoration: underline;
 }
+
