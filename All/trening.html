@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:100vh;
+            width:100vw;
+            background-color: #ebe9e9;
+
+        }
+
+        div.kalkulator{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width:450px;
+            height:600px;
+
+        
+        }
+        div.kalkulator .wynik{
+            background-color: goldenrod;
+            width:99%;
+            font-size: 1.5rem;
+
+        }
+        div.kalkulator .next,
+        div.kalkulator .prev{
+            padding:3px 14px;
+            font-size: 2.4rem;
+        }
+        div.kalkulator .next{
+            text-align: right;
+
+            
+        }
+        div.kalkulator button{
+        width:33%;
+        cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kalkulator">
+        <div class="wynik">
+            <div class="prev">1</div>
+            <div class="next">1</div>
+        </div>
+        <button class="clear-">CE</button>
+        <button class="operator">√ </button>
+        <button class="operator">DEL </button>
+        <button class="operator">%</button>
+        <button class="operator">/</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator">*</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator">-</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator">+</button>
+        <button class="number">0</button>
+        <button class="operator">.</button>
+        <button class="operator">=</button>
+    
+
+
+    </div>
+
+
+
+
+    <script>
+        const result = document.querySelector("div .next");
+        const prevResult = document.querySelector("div .prev");
+        result.textContent= result;
+        
+
+    </script>
+    
+</body>
+</html>
